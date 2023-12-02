@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sexual Health</title>
+     <link rel="stylesheet" type="text/css" href= "styles.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+    {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+</head>
+<body>
+<header>
+  <nav>
+    <ul>
+      <li><a href="/rationale/">Rationale</a></li>
+      <li><a href="/contraception/">Contraception</a></li>
+      <li><a href="/sexualhealth/">Sexual Health</a></li>
+      <li><a href="/consentandsexualabuse/">Consent and Sexual Abuse</a></li>
+      <li><a href="/whispers/">Whispers</a></li>
+    </ul>
+  </nav>
+     <h1 class="bw">Whisper</h1>
+</header>
+
+<div class="blog">
+  <div class="article dark-pink">
+    <h2>Sexual Hygiene</h2>
+    <p>Sexual health is a critical component of overall well-being, yet it is often shrouded in taboo and misunderstanding. It encompasses more than just the absence of disease or dysfunction; it’s about achieving a positive and respectful approach to sexuality and sexual relationships, as well as the possibility of having pleasurable and safe sexual experiences, free of coercion, discrimination, and violence. For many, the concept of sexual health is limited to reproductive health, but it is much broader, including emotional, social, and mental factors.</p>
+    <a href="/article1/">Read More</a>
+  </div>
+
+  <div class="article darker-pink">
+    <h2>Article 2 Title</h2>
+    <p>Description or preview of Article 2</p>
+    <a href="/article2/">Read More</a>
+  </div>
+
+  <div class="article light-pink">
+    <h2>Article 3 Title</h2>
+    <p></p>
+    <a href="/article3/">Read More</a>
+  </div>
+
+    <!-- sexual health.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Sexual Health Blog</h1>
+  {% for post in posts %}
+    <div class="post">
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.content }}</p>
+      <p>Published on: {{ post.published_date|date:"F d, Y" }}</p>
+    </div>
+  {% endfor %}
+{% endblock %}
+
+</body>
+</html>

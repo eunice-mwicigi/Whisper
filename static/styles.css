@@ -1,0 +1,182 @@
+body {
+    background-color: white;
+    border: 70px;
+}
+
+.centered-box {
+            width: 300px; /* Adjust width as needed */
+            height: 150px; /* Adjust height as needed */
+            background-color: white;
+            border: 1px solid #000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+@font-face {
+    font-family: 'ScriptItalic' ;
+    local("ScriptItalic"),
+    src: url("C:\Users\HP\PycharmProjects\djangoProject4\fonts\ScriptItalic.ttf") format("opentype");
+}
+
+.blog {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #880649;
+}
+
+.article {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.dark-pink {
+  background-color: #ff6b6b; /* Darker pink */
+    margin-top: 20px;
+    height: 43.3%;
+}
+
+.darker-pink {
+  background-color: #ff4785; /* Dark pink */
+      margin-top: 20px;
+    height: 33.3%;
+}
+
+.light-pink {
+  background-color: #ff87a2; /* Lighter pink */
+      margin-top: 20px;
+    height: 33.3%;
+}
+
+.article h2 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.article p {
+  margin-top: 5px;
+}
+
+.article a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  padding: 8px 0;
+  background-color: rgba(253,9,70,0.98);
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+
+}
+
+.article a:hover {
+  background-color: pink;
+}
+
+.ch1 {font-size: 42px;
+    background-color: rgba(253,9,106,0.98);
+    color: white;
+    font-family: 'ScriptItalic', }
+
+.message-box {
+  background-color: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+.message-box textarea {
+  width: 100%;
+    height: 100px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.message-box button {
+  background-color: rgba(253,9,70,0.98);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.message-box button:hover {
+  background-color: pink;
+}
+
+header {
+  background-color: #fd0949;
+  color: white;
+  text-align: center;
+  padding: 5px 5px;
+    border-radius: 10px;
+}
+
+header h1 {
+  font-style: italic;
+    font-size: 60px;
+font-family: 'Parisienne', cursive;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+  background-image: url('C:\Users\HP\PycharmProjects\saturdayWeb\templates\d517d284cb3b31617a73f8bff8804813.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+}
+
+nav ul {
+  list-style: circle;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+.a{ color: rgba(253,9,70,0.98)}
+
+.pw { color: #880649;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    background-color: white;
+    background-position-x: center;
+    background-position-y: center;
+
+    border: 5px solid #fd0946;
+    border-radius: 20px;
+
+    margin-top: 60px;
+    margin-right: 60px;
+    margin-left: 60px;
+
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.bb{text-align: center;}
+
+.yy{ margin-left: 80px;
+margin-right: 30px;
+margin-top: 30px;
+margin-bottom: 30px;}
